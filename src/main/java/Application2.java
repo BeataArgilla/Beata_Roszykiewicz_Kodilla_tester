@@ -1,5 +1,5 @@
 public class Application2 {
-    String name = "Adam"; /// gdzie powinny być dane startowe, w plik z main? czy tutaj? wg mnie lepiej w main
+    String name = "Adam";
     double age = 40.5;
     double height = 178;
 
