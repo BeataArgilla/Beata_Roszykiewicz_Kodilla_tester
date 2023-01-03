@@ -30,6 +30,6 @@ public class AllSystems {
 
 
         int temp1 = systemToDo.turnOff() - systemToDo.turnON();
-        System.out.println("System  " + systemToDo2.getName()+ "  był obecny na rynku:   " + temp1+ "  rok/lata");}
+        System.out.println("System  " + systemToDo2.getName()+ "  był obecny na rynku:   " + temp1+ " rok/lata");}
     }
 
