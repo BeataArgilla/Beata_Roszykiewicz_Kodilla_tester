@@ -1,27 +1,29 @@
 
-public class User {
+//public class User {
+    //Utwórz klasę User, zawierającą imię oraz wiek użytkownika.
+    // W metodzie main utwórz tablicę obiektów typu User i wypełnij ją dowolnymi obiektami.
+    // W pętli for wyświetl imiona użytkowników, których wiek jest poniżej średniej wieku.
 
 
-    public static void main(String[] args) {
-        Dane dane = new Dane();
+  //  public static void main(String[] args) {
 
-        dane.person[0] = "Harley";
-        dane.person[1] = "Tosia";
-        dane.person[2] = "Picasso";
-        dane.person[3] = "Jackie";
+     //   String name;
+    //    int age;
 
-        dane.age[0] = 9;
-        dane.age[1] = 2;
-        dane.age[2] = 8;
-        dane.age[3] = 1;
+     //   Dane dane = new Dane();
+      //  Dane malgosia = new Dane("Malgosia", 18);
+    //    Dane smok = new Dane("Smok", 200);
+     //   Dane rumcajs = new Dane("Rumcajs", 40);
+     //   Dane krecik = new Dane("Krecik", 5);
+    //    Dane gargamel = new Dane("Gargamel", 35);
 
-        dane.sumOfAgeAndAverage();
-        System.out.println("To jest średnia wieku:   " + dane.result); // jaka jest przyjęta konwencja dobrego programowania: czy to też powinna byc metoda void
-        // w pliku Dane, czy polecenie wydruku w pliku głównym?
-        dane.checkAndPrintName();
+    //    String[] users = new String[]{"Malgosia", "Smok", "Rumcajs", "Krecik", "Gargamel"};
 
-            }
-
-}
+     //   int test = malgosia.getAge();
 
 
+  //  }
+
+//}
+
+//
