@@ -4,9 +4,10 @@ public abstract class Job {
     public int salary;
     public String responsibility;
 
-
-        public abstract String getResponsibility();
-        public abstract int getSalary();
-
+    public Job(int salary, String responsibility) {
+        this.salary = salary;
+        this.responsibility = responsibility;
     }
+}
+
 
