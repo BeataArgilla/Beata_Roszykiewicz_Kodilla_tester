@@ -22,11 +22,29 @@ public class CalculatorTestSuite {
         assertEquals(-3, subResult);
     }
     @Test
-    public void testPotega() {
+    public void testPowerNumberGreaterThanZero() {
         Calculator calculator2 = new Calculator();
-        int c = 5;
-        int d = 3;
-        double potResult = calculator2.potega(c,d);
+        int a = 5;
+        int b = 3;
+        double potResult = calculator2.potega(a,b);
         assertEquals(125, potResult);
+    }
+    @Test
+    public void testPowerNumberEqualZero() {
+        Calculator calculator2 = new Calculator();
+        double a = 0;
+        double b = 3;
+        double delta =0.1;
+        double potResult = calculator2.potega(a,b);
+        assertEquals(0, potResult, delta);
+    }
+    @Test
+    public void testPowerNumberSmallerThanZero() {
+        Calculator calculator2 = new Calculator();
+        double a = -2.2;
+        double b = 2;
+        double delta =0.0001;
+        double potResult = calculator2.potega(a,b);
+        assertEquals(4.84, potResult, delta); // po co mi ta delta?
     }
 }
