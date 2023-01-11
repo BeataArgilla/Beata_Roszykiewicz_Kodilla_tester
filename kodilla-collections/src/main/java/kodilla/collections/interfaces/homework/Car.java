@@ -1,6 +1,6 @@
 package kodilla.collections.interfaces.homework;
 
-interface Car {
+public interface Car {
      int getSpeed();
 
      void increaseSpeed();
