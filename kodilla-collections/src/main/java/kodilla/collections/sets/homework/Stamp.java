@@ -7,26 +7,30 @@ public class Stamp {
     public int stampWidth;
 
     public int stampHeight;
-    String isStamped;
+    boolean stamped;
 
-    public Stamp(String stampName, int stampWidth, int stampHeight, String isStamped) {
+    public Stamp(String stampName, int stampWidth, int stampHeight, boolean stamped) {
         this.stampName = stampName;
         this.stampWidth = stampWidth;
         this.stampHeight = stampHeight;
-        this.isStamped = isStamped;
+        this.stamped = stamped;
     }
 
     public int getStampHeight() {
         return stampHeight;
+    }
+    public void setStamped(boolean stamped) {
+        if (stamped){
+            System.out.println("Already stamped");
+        } else{
+            System.out.println("Not stamped yet");
+        }
     }
 
     public int getStampWidth() {
         return stampWidth;
     }
 
-    public String isStamped() { // po co są te metody, skoro never used? to samo jest w Order (w zadaniu domowym)
-        return isStamped;
-    }
 
     public String getStampName() {
         return stampName;
@@ -37,12 +41,12 @@ public class Stamp {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Stamp stamp = (Stamp) o;
-        return stampWidth == stamp.stampWidth && stampHeight == stamp.stampHeight && stampName.equals(stamp.stampName) && isStamped.equals(stamp.isStamped);
+        return stampWidth == stamp.stampWidth && stampHeight == stamp.stampHeight && stamped == stamp.stamped && stampName.equals(stamp.stampName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(stampName, stampWidth, stampHeight, isStamped);
+        return Objects.hash(stampName, stampWidth, stampHeight, stamped);
     }
 
     @Override
@@ -51,7 +55,9 @@ public class Stamp {
                 "stampName='" + stampName + '\'' +
                 ", stampWidth=" + stampWidth +
                 ", stampHeight=" + stampHeight +
-                ", isStamped='" + isStamped + '\'' +
+                ", isStamped='" + stamped + '\'' +
                 '}';
     }
 }
+
+
