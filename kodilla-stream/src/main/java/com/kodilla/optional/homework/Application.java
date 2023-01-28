@@ -17,12 +17,12 @@ public class Application {
         System.out.println(students.size());
 
         for (Student varX : students) {
-            Optional<Student> optionalStudent = Optional.ofNullable(students);
-            optionalStudent.ifPresent(varX == null);
-            if (varX = null)  {
-                System.out.println("<undefined>");
-            } else {
+            Optional<Student> optionalStudent = Optional.ofNullable(null);
+            if (optionalStudent.ifPresent()) {
                 System.out.println("uczeń: " + varX.getName() + ", nauczyciel: " + varX.getTeacher());
+            } else {
+                System.out.println("<undefined>");
+
             }
 
         }
