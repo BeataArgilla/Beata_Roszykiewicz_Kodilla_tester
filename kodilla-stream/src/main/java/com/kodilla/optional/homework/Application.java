@@ -22,7 +22,7 @@ public class Application {
                 System.out.println("Hallo");
             }
             else {
-        //        String name = optionalTeacher.orElse(new Teacher(null)).getName();
+        //       String name = optionalTeacher.orElse(new Teacher(null)).getName();
             System.out.println(("uczeń: " +student.getName() + " , nauczyciel: <undefined>"));}
 
             }
