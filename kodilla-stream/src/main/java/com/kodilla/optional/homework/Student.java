@@ -6,6 +6,7 @@ public class Student {
 
     public Student(String name, Teacher teacher){
         this.name = name;
+        this.teacher = teacher;
     }
 
     public String getName() {
