@@ -8,11 +8,9 @@ import java.util.List;
 public class Shop {
     private List<Order> orders = new ArrayList<>();
 
-
     public void addOrders(Order orders) {
         this.orders.add(orders);
     }
-
 
     public Order getOrder(int index) {
         if (index >= 0 && index < orders.size()) {

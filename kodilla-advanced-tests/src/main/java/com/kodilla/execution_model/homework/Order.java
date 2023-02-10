@@ -14,8 +14,6 @@ public Order(double orderValue, String login, Date date){
     this.orderValue = orderValue;
     this.login = login;
     this.date = date;
-
-
 }
 
 public String getLogin(){
