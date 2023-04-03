@@ -5,4 +5,8 @@ include 'kodilla-basic-tests:src:test:com'
 findProject(':kodilla-basic-tests:src:test:com')?.name = 'com'
 include 'kodilla-collections'
 include 'kodilla-collections-advanced'
+include 'kodilla-stream'
+include 'kodilla-advanced-tests'
+include 'kodilla-spring-basic'
+include 'kodilla-rest-api'
 
